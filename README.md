@@ -108,10 +108,12 @@ Create a webhook for a pipeline:
 Edit a webhook:
 
     Streak::Webhook.edit("webhook_key_1", {event: 'BOX_EDIT', targetUrl: 'http://of.dev/edit'})
+    Streak::Webhook.edit("agxzfm1haWxmb29nYWVyFAsSB1dlYkhvb2sYgICw-ZCrgggM", {event: 'BOX_EDIT', targetUrl: 'http://of.dev/edit'})
 
 Delete a webhook:
 
     Streak::Webhook.delete("webhook_key_1")
+    Streak::Webhook.delete("agxzfm1haWxmb29nYWVyFAsSB1dlYkhvb2sYgICw-ZCrgggM")
 
 ## NOTES
 
