@@ -94,7 +94,6 @@ Submit a Search query
 Retrieve list of webhooks for a pipeline:
 
     Streak::Webhook.all("pipeline_key_1")
-    Streak::Webhook.all("agxzfm1haWxmb29nYWVyNgsSDE9yZ2FuaXphdGlvbiIPb25mcm9udGllcnMuY29tDAsSCFdvcmtmbG93GICAgICklJwKDA")
 
 Find a single webhook:
 
@@ -103,17 +102,14 @@ Find a single webhook:
 Create a webhook for a pipeline:
 
     Streak::Webhook.create("pipeline_key_1", {event: 'BOX_CREATE', targetUrl: 'http://www.example.com'})
-    Streak::Webhook.create('agxzfm1haWxmb29nYWVyNgsSDE9yZ2FuaXphdGlvbiIPb25mcm9udGllcnMuY29tDAsSCFdvcmtmbG93GICAgICklJwKDA', {event: 'BOX_EDIT', targetUrl: 'http://onfrontiers.10.0.1.2.xip.io/streak/events/create'})
 
 Edit a webhook:
 
     Streak::Webhook.edit("webhook_key_1", {event: 'BOX_EDIT', targetUrl: 'http://of.dev/edit'})
-    Streak::Webhook.edit("agxzfm1haWxmb29nYWVyFAsSB1dlYkhvb2sYgICw-ZCrgggM", {event: 'BOX_EDIT', targetUrl: 'http://of.dev/edit'})
 
 Delete a webhook:
 
     Streak::Webhook.delete("webhook_key_1")
-    Streak::Webhook.delete("agxzfm1haWxmb29nYWVyFAsSB1dlYkhvb2sYgICw-ZCrgggM")
 
 ## NOTES
 
