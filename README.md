@@ -124,6 +124,7 @@ This gem currently supports:
 * Fields
 * Search
 * Webhooks
+* Tasks
 * Reminders (TODO)
 * Files (TODO)
 * Threads (TODO)
