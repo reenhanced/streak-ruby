@@ -15,6 +15,7 @@ require "streak/pipeline"
 require "streak/stage"
 require "streak/user"
 require "streak/search"
+require "streak/task"
 require "streak/file"
 require "streak/webhook"
 
