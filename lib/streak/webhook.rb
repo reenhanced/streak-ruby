@@ -11,12 +11,12 @@ module Streak
     end
 
     def self.create(pipeline_key, params)
-      res = Streak.request(:post, "/pipelines/#{pipeline_key}/webhooks", params, {}, 2)
+      res = Streak.request(:post, "/pipelines/#{pipeline_key}/webhooks", MultiJson.dump(params), {content_type: 'application/json'}, 2)
       convert_to_streak_object(res, Webhook)
     end
 
     def self.edit(webhook_key, params)
-      res = Streak.request(:post, "/webhooks/#{webhook_key}", params, {}, 2)
+      res = Streak.request(:post, "/webhooks/#{webhook_key}", MultiJson.dump(params), {content_type: 'application/json'}, 2)
       convert_to_streak_object(res, Webhook)
     end
 
